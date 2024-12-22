@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 900px;
+    height: 350px;
+    margin:  0 auto;
+    display: flex;
+    background-color: #0D0D0D;
+    color: #fff;
+    border-radius: 10px;
+
+    transition: all .9s ease;
+   
+
+    @media screen and (max-width:950px) {
+        width: 90%;
+    }
+    @media screen and (max-width:400px) {
+        height: 100%;
+        width: 100%;
+    }
+    .cardDetails{
+        border-radius: 10px;
+        z-index: 999;
+        box-shadow: 64px 3px 44px 0px rgba(0,0,0,0.75);
+        width: 50%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+
+        @media screen and (max-width:750px) {
+            width: 90%;
+            margin:  0 auto;
+        }
+
+        .cardDetailsHeading{
+            display: flex;
+            gap: 1rem;
+
+            img{
+                width: 80px;
+            }
+
+            .cardDetailsHeadingImg{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .date{
+                    display: flex;
+                    gap: 10px;
+                    color: rgb(12, 12, 225);
+                }
+                .actor{
+                    display: flex;
+                    gap: 10px;
+
+                    button{
+                        padding: 1px 5px;
+                    }
+                }
+            }
+        }
+        .puni{
+            @media screen and (max-width:400px) {
+                display: none;
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    .cardImg{
+        width: 50%;
+        border-radius: 10px;
+        height: 100%;
+
+        @media screen and (max-width:750px) {
+            display: none;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 0 10px 10px 0;
+            height: 100%;
+        }
+    }
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    /* transition-duration: 1s; */
+}
