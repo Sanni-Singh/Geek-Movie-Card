@@ -62,7 +62,10 @@
                     gap: 10px;
 
                     button{
-                        padding: 1px 5px;
+                        padding: 3px 8px;
+                        background-color: yellow;
+                        border: none;
+                        font-weight: 600;
                     }
                 }
             }
@@ -94,7 +97,7 @@
     }
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
     cursor: pointer;
     /* transition-duration: 1s; */
 }

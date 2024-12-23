@@ -1,12 +1,12 @@
 import './Card.css'
 
-const Card = ({bgp , title,releaseYear,director,imdbRating,genre,poster})=>{
+const Card = ({bgp , title,releaseYear,director,imdbRating,genre,poster,description})=>{
 
     return (
         <div className="card">
             <div className="cardDetails">
                 <div className="cardDetailsHeading">
-                    <img src={bgp} alt="" />
+                    <img src={poster} alt="" />
                     <div className="cardDetailsHeadingImg">
                         <h1>{title}</h1>
                         <div className="date">
@@ -19,8 +19,7 @@ const Card = ({bgp , title,releaseYear,director,imdbRating,genre,poster})=>{
                         </div>
                     </div>
                 </div>
-                <p className='puni'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem! Error doloribus libero ratione aliquid praesentium voluptates et totam atque cum minima in, architecto asperiores animi, fugit, ad quaerat. Rem.
-                Quam non unde vel alias,uis facere nostrum unde veritatis?</p >
+                <p className='puni'>{description}</p >
                 <div className="icons">
                     <img src="../.././public/share.svg" alt="" />
                     <img src="../.././public/love.svg" alt="" />
@@ -28,7 +27,7 @@ const Card = ({bgp , title,releaseYear,director,imdbRating,genre,poster})=>{
                 </div>
             </div>
             <div className="cardImg">
-                <img src={poster} alt="" />
+                <img src={bgp} alt="" />
             </div>
         </div>
     )
